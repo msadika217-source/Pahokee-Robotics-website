@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Pahokee Robotics - Contact Us</title>
+    
+    <link href="/static/PahokeeRoboticsStyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .contact-container {
+            display: flex;
+            gap: 40px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 20px auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        /* CONTACT COLUMN BLOCKS */
+        .contact-column {
+            width: 50%;
+        }
+
+        .info-item {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .info-item i {
+            margin-right: 10px;
+            color: #087CA7;
+            font-style: normal;
+        }
+
+        .social-center {
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: auto;
+            margin: 0 15px;
+            transition: transform 0.2s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body style="background-color:#C7E8F3; margin: 0; padding: 0;">
+    <header>
+        <h1 style="font-family: 'Jerseyletters-IP5V', sans-serif; text-align: center; font-size: 100px; margin: 0; color: #087CA7">
+            <a href="{{ url_for('index') }}" style="text-decoration: none; color: inherit;">Pahokee Robotics</a>
+        </h1>
+        
+        <nav class="site-nav">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                
+                <li class="teams-dropdown">
+                    <a href="{{ url_for('teams') }}" class="dropbtn">Teams <i class="fa-solid fa-chevron-down" style="font-size: 0.75em;"></i></a>
+                    <ul class="teams-dropdown-menu">
+                        <li><a href="{{ url_for('middle_school') }}">Middle School</a></li>
+                        <li class="has-subs">
+                            <a href="{{ url_for('high_school') }}">High School <i class="fa-solid fa-chevron-right" style="font-size: 0.75em; float: right; margin-top: 4px;"></i></a>
+                            <ul class="teams-sub-menu">
+                                <li><a href="{{ url_for('bender_bots') }}">BenderBots </a></li>
+                                <li><a href="{{ url_for('mechatrons') }}">Mechatrons </a></li>
+                                <li><a href="{{ url_for('rising_phoenix') }}">Rising Phoenix </a></li>
+                                <li><a href="{{ url_for('dynamics') }}">Dynamics</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="{{ url_for('outreach') }}">Outreach</a></li>
+                <li><a href="{{ url_for('sponsors') }}">Sponsors</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('calendar') }}">Calendar</a></li>
+                <li><a href="{{ url_for('resources') }}">Resources</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+                
+    <main>
+        <br><br>
+        <h1 style="text-align: center; font-family: 'Jerseyletters-IP5V', sans-serif; color: #005270; font-size: 50px; margin: 0 0 20px 0;">Contact Us</h1>
+
+        <div class="contact-container">
+            <div class="contact-column">
+                <div class="info-item">
+                    <i>✉️</i> <strong>Luis Paniagua</strong><br>
+                    Program Administrator / Coach <br>
+                    Single School Culture Coordinator <br>
+                    <a href="mailto:Luis.paniagua@palmbeachschools.org">Luis.paniagua@palmbeachschools.org</a>
+                    <br><br>
+                    
+                    <i>✉️</i> <strong>Daniel Cortes</strong><br>
+                    FTC Robotics Coach <br>
+                    Robotics / Computer Science Teacher <br>
+                    <a href="mailto:daniel.cortescalderon@palmbeachschools.org">daniel.cortescalderon@palmbeachschools.org</a>
+                    <br><br>
+                    
+                    <i>📍</i> <strong>Pahokee High School</strong><br>
+                    900 Larrimore Rd, Pahokee, FL 33476<br>
+                    561-924-6400
+                </div>
+            </div>
+
+            <div class="contact-column">   
+                <div class="info-item">
+                    <i>✉️</i> <strong>John Khoury</strong><br>
+                    Vex V5, VEX IQ Robotics Coach <br>
+                    Middle High IT / Robotics Teacher <br>
+                    <a href="mailto:john.khoury@palmbeachschools.org">john.khoury@palmbeachschools.org</a>
+                    <br><br>
+                    
+                    <i>✉️</i> <strong>Eric Englander</strong><br>
+                    Vex V5, VEX IQ Robotics Coach <br>
+                    Middle School IT / Robotics Teacher <br>
+                    <a href="mailto:eric.englander@palmbeachschools.org">eric.englander@palmbeachschools.org</a>
+                    <br><br>
+                    
+                    <i>📍</i> <strong>Pahokee Middle School</strong><br>
+                    850 Larrimore Rd, Pahokee, FL 33476 <br>
+                    561-924-6500
+                </div>
+            </div>
+        </div>
+        
+        <div class="social-center">
+            <a href="https://www.facebook.com/PMHSRobotics" target="_blank" rel="noopener noreferrer">
+                <img src="/static/images/facebook red gear.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/blue.devil.robotics" target="_blank" rel="noopener noreferrer">
+                <img src="/static/images/instagram blue gear.png" alt="Instagram" class="social-icon">
+            </a>    
+            <a href="https://www.tiktok.com/@pahokee_robotics" target="_blank" rel="noopener noreferrer">
+                <img src="/static/images/tiktok-graygear.png" alt="TikTok" class="social-icon">
+            </a>
+        </div>
+    </main>
+</body>
+</html>
